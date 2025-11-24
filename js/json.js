@@ -57,9 +57,24 @@ function showTopFlavors() {
         // STEP 10e: build HTML elements for the content
         const article = document.createElement('article');
         article.classList.add("flavor-card");
-        
-        // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
-        
+
+        // Color-coding based on type
+        if (flavor.type === "ice cream") article.style.background = "#d0e8ff";
+        if (flavor.type === "sorbet") article.style.background = "#ffe6cc";
+        if (flavor.type === "gelato") article.style.background = "#e6ffe6";
+
+        const img = document.createElement('img');
+        img.src = "images/" + flavor.image;
+        img.alt = flavor.name;
+
+        const h2 = document.createElement('h2');
+        const typeP = document.createElement('p');
+        const caloriesP = document.createElement('p');
+
+        // STEP 10f: Set the textContent property for each of the above elements (except the UL)
+        h2.textContent = flavor.name;
+        typeP.textContent = "Type: " + flavor.type;
+        caloriesP.textContent = "Calories: " + flavor.calories;
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
         
