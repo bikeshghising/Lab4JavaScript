@@ -77,9 +77,14 @@ function showTopFlavors() {
         caloriesP.textContent = "Calories: " + flavor.calories;
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
-        
+        const ul = document.createElement('ul');
+        for (let j = 0; j < flavor.ingredients.length; j++) {
             // add the ingredient to the UL
-
+            const li = document.createElement('li');
+            li.textContent = flavor.ingredients[j];
+            ul.appendChild(li);
+        }        
+        
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
