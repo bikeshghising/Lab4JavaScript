@@ -30,6 +30,7 @@ async function populate() {
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
     showTopFlavors();
 }
+populate();
 
 /* STEP 9b: Build out the populateHeader() function */
 function populateHeader() {
@@ -84,11 +85,17 @@ function showTopFlavors() {
             li.textContent = flavor.ingredients[j];
             ul.appendChild(li);
         }        
+
         
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
-        
+        article.appendChild(img);
+        article.appendChild(h2);
+        article.appendChild(typeP);
+        article.appendChild(caloriesP);
+        article.appendChild(ul);
+
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        
+        section.appendChild(article);
     };
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
