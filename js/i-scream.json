@@ -25,6 +25,29 @@
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    {
+      "name": "Strawberry Moon Blast",
+      "calories": 320,
+      "type": "gelato",
+      "ingredients": [
+        "strawberry purée",
+        "moon sugar",
+        "freeze-dried berries"
+      ],
+      "image": "ice-cream-xtra1.svg"
+    },
+    {
+      "name": "Cosmic Cookie Crumble",
+      "calories": 500,
+      "type": "ice cream",
+      "ingredients": [
+        "vanilla base",
+        "galactic cookie chunks",
+        "cosmo chocolate drizzle"
+      ],
+      "image": "ice-cream-xtra2.svg"
     }
+
   ]
 }
